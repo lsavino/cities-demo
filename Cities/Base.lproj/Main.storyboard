@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Cities-->
         <scene sceneID="KUU-4E-d1S">
             <objects>
                 <tableViewController id="tYz-jd-MVP" customClass="CitiesTableViewController" customModule="Cities" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,6 +26,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="lGZ-au-3L9" kind="show" id="LMs-0T-T1E"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,7 +36,7 @@
                             <outlet property="delegate" destination="tYz-jd-MVP" id="Zrj-hd-42Y"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="HXW-F8-oYe"/>
+                    <navigationItem key="navigationItem" title="Cities" id="HXW-F8-oYe"/>
                     <connections>
                         <outlet property="view" destination="ElR-0g-Mep" id="U7V-eQ-mz8"/>
                     </connections>
@@ -41,6 +44,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4U-ut-lWJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="812" y="416"/>
+        </scene>
+        <!--City View Controller-->
+        <scene sceneID="Fnk-gO-KZe">
+            <objects>
+                <viewController id="lGZ-au-3L9" customClass="CityViewController" customModule="Cities" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OdL-md-fXn"/>
+                        <viewControllerLayoutGuide type="bottom" id="nTA-QH-s6r"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="iIO-aQ-0CT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I3Y-FO-FZS">
+                                <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="I3Y-FO-FZS" id="Cyd-lb-fQ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WAI-GK-MAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="416"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xng-SC-r7m">

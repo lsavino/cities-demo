@@ -11,8 +11,8 @@ import UIKit
 class CitiesTableViewController: UITableViewController {
 
 	let cities = [
-		City(name: "Seattle", imageName: "seattle-skyling"),
-		City(name: "Sydney", imageName: "sydney-opera-house")
+		City(name: "Seattle", imageName: "seattle-skyline"),
+		City(name: "Sydney", imageName: "sydney-opera-house"),
 	]
 
 	override func viewDidLoad() {
@@ -25,7 +25,14 @@ class CitiesTableViewController: UITableViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
-
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		if let selectedPath = self.tableView.indexPathForSelectedRow() {
+			let city = cities[selectedPath.row]
+			if let destination = segue.destinationViewController as? CityViewController {
+				destination.imageName = city.imageName
+			}
+		}
+	}
 }
 
 extension CitiesTableViewController: UITableViewDataSource {

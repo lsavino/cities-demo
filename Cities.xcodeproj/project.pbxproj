@@ -14,6 +14,7 @@
 		DA7CF4DC19E6E8E10073F797 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7CF4DA19E6E8E10073F797 /* LaunchScreen.xib */; };
 		DA7CF4E819E6E8E10073F797 /* CitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CF4E719E6E8E10073F797 /* CitiesTests.swift */; };
 		DA7CF4F219E6E9B40073F797 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CF4F119E6E9B40073F797 /* City.swift */; };
+		DA7CF4F419E6F2020073F797 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CF4F319E6F2020073F797 /* CityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		DA7CF4E619E6E8E10073F797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA7CF4E719E6E8E10073F797 /* CitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTests.swift; sourceTree = "<group>"; };
 		DA7CF4F119E6E9B40073F797 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		DA7CF4F319E6F2020073F797 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				DA7CF4D119E6E8E10073F797 /* AppDelegate.swift */,
 				DA7CF4D319E6E8E10073F797 /* TableViewController.swift */,
+				DA7CF4F319E6F2020073F797 /* CityViewController.swift */,
 				DA7CF4F119E6E9B40073F797 /* City.swift */,
 				DA7CF4D519E6E8E10073F797 /* Main.storyboard */,
 				DA7CF4D819E6E8E10073F797 /* Images.xcassets */,
@@ -218,6 +221,7 @@
 				DA7CF4D419E6E8E10073F797 /* TableViewController.swift in Sources */,
 				DA7CF4D219E6E8E10073F797 /* AppDelegate.swift in Sources */,
 				DA7CF4F219E6E9B40073F797 /* City.swift in Sources */,
+				DA7CF4F419E6F2020073F797 /* CityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
