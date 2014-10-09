@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DA7CF4D219E6E8E10073F797 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CF4D119E6E8E10073F797 /* AppDelegate.swift */; };
-		DA7CF4D419E6E8E10073F797 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CF4D319E6E8E10073F797 /* ViewController.swift */; };
+		DA7CF4D419E6E8E10073F797 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CF4D319E6E8E10073F797 /* TableViewController.swift */; };
 		DA7CF4D719E6E8E10073F797 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7CF4D519E6E8E10073F797 /* Main.storyboard */; };
 		DA7CF4D919E6E8E10073F797 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7CF4D819E6E8E10073F797 /* Images.xcassets */; };
 		DA7CF4DC19E6E8E10073F797 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7CF4DA19E6E8E10073F797 /* LaunchScreen.xib */; };
 		DA7CF4E819E6E8E10073F797 /* CitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CF4E719E6E8E10073F797 /* CitiesTests.swift */; };
+		DA7CF4F219E6E9B40073F797 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CF4F119E6E9B40073F797 /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		DA7CF4CC19E6E8E10073F797 /* Cities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7CF4D019E6E8E10073F797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA7CF4D119E6E8E10073F797 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA7CF4D319E6E8E10073F797 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA7CF4D319E6E8E10073F797 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		DA7CF4D619E6E8E10073F797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA7CF4D819E6E8E10073F797 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DA7CF4DB19E6E8E10073F797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DA7CF4E119E6E8E10073F797 /* CitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7CF4E619E6E8E10073F797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA7CF4E719E6E8E10073F797 /* CitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTests.swift; sourceTree = "<group>"; };
+		DA7CF4F119E6E9B40073F797 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				DA7CF4D119E6E8E10073F797 /* AppDelegate.swift */,
-				DA7CF4D319E6E8E10073F797 /* ViewController.swift */,
+				DA7CF4D319E6E8E10073F797 /* TableViewController.swift */,
+				DA7CF4F119E6E9B40073F797 /* City.swift */,
 				DA7CF4D519E6E8E10073F797 /* Main.storyboard */,
 				DA7CF4D819E6E8E10073F797 /* Images.xcassets */,
 				DA7CF4DA19E6E8E10073F797 /* LaunchScreen.xib */,
@@ -212,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA7CF4D419E6E8E10073F797 /* ViewController.swift in Sources */,
+				DA7CF4D419E6E8E10073F797 /* TableViewController.swift in Sources */,
 				DA7CF4D219E6E8E10073F797 /* AppDelegate.swift in Sources */,
+				DA7CF4F219E6E9B40073F797 /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
